@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>gr.anneta</groupId>
-    <artifactId>test</artifactId>
+    <artifactId>test_project</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -22,15 +22,25 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>gr.anneta.test.StartUp</mainClass>
+        <mainClass>gr.anneta.test_project.StartUp</mainClass>
     </properties>
     
     <dependencies>
         <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>8.40.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx-samples</artifactId>
+            <version>8.40.12</version>
+        </dependency>
+        <!--        <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.13</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
 

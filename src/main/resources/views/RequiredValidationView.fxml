@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.glyphfont.*?>
+<?import org.controlsfx.control.*?>
+<?import org.controlsfx.control.textfield.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.anneta.test_project.controller.RequiredValidationController">
+   <children>
+      <TextField fx:id="testTextField1" layoutX="65.0" layoutY="28.0" />
+      <TextField fx:id="testTextField2" layoutX="65.0" layoutY="71.0" />
+      <CheckBox fx:id="testCheckBox" layoutX="65.0" layoutY="117.0" mnemonicParsing="false" />
+      <ComboBox fx:id="testComboBox" layoutX="65.0" layoutY="150.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="testChoiceBox" layoutX="65.0" layoutY="203.0" prefWidth="150.0" />
+      <Button layoutX="236.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Test" />
+   </children>
+   <stylesheets>
+      <URL value="@../../files/css/common.css" />
+      <URL value="@../../files/css/fextile.css" />
+   </stylesheets>
+</AnchorPane>
