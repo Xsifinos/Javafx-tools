@@ -43,9 +43,9 @@ public class RequiredValidationController implements Initializable {
     private ChoiceBox testChoiceBox;
 
     @FXML
-    void primaryStage(ActionEvent event) throws IOException {
+    void secondaryStageButton(ActionEvent event) throws IOException {
         Stage stage = new Stage();
-        stage.setTitle("JavaFX-tools");
+        stage.setTitle("Custom Validation");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/CustomValidationView.fxml"));
         Parent root = (Parent) loader.load();
         stage.setScene(new Scene(root));

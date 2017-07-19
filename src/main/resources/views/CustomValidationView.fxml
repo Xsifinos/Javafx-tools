@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.glyphfont.*?>
+<?import org.controlsfx.control.*?>
+<?import org.controlsfx.control.textfield.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<VBox alignment="TOP_RIGHT" prefHeight="500.0" prefWidth="400.0" spacing="10.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.anneta.test_project.controller.CustomValidationController">
+    <children>
+        <GridPane vgap="5.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField fx:id="emailTxtf" layoutX="181.0" layoutY="5.0" promptText="(e.g. something@gmail.com)" GridPane.columnIndex="1" />
+                <TextField fx:id="numberTxtf" promptText="Enter only numbers.." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="min20Txtf" promptText="Enter a number 20+ (e.g.45)" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="max100Txtf" promptText="Enter a number 0-100(e.g.99)" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="dateTxtf" promptText="(e.g. 01.01.2000 or 1.1.2000)" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="dateTimeTxtf" promptText="(e.g. 01.01.2000 12:00)" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="ageMin20Txtf" promptText="Enter a birthdate.. " GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <TextField fx:id="ageMax30Txtf" promptText="Enter a birthdate.. " GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <TextField fx:id="decimalTxtf" promptText="Enter a decimal number.." GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <TextField fx:id="max20LengthTxtf" promptText="Enter until 20 characters.." GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <TextField fx:id="min5LengthTxtf" promptText="Enter 5+ characters.." GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                <TextField fx:id="rangeLengthTxtf" promptText="Enter characters.." GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                <TextField fx:id="pathFile" promptText="Enter a filepath.." GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                <TextField fx:id="pathDirectory" promptText="Enter a directorypath.." GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                <TextField fx:id="pathFilePdf" promptText="Enter a pdf filepath.." GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                <Label text="Email:" GridPane.rowIndex="0" />
+                <Label text="Number:" GridPane.rowIndex="1" />
+                <Label text="NumberMin20:" GridPane.rowIndex="2" />
+                <Label text="NumberMax100:" GridPane.rowIndex="3" />
+                <Label text="Date:" GridPane.rowIndex="4" />
+                <Label text="DateTime:" GridPane.rowIndex="5" />
+                <Label text="AgeMin20:" GridPane.rowIndex="6" />
+                <Label text="AgeMax30:" GridPane.rowIndex="7" />
+                <Label text="Decimal:" GridPane.rowIndex="8" />
+                <Label text="MaxLength20:" GridPane.rowIndex="9" />
+                <Label text="MinLength5:" GridPane.rowIndex="10" />
+                <Label text="RangeLength20-50:" GridPane.rowIndex="11" />
+                <Label text="PathFile:" GridPane.rowIndex="12" />
+                <Label text="PathDirectory:" GridPane.rowIndex="13" />
+                <Label text="PathFilePDF:" GridPane.rowIndex="14" />
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </GridPane>
+      <HBox alignment="TOP_RIGHT" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#backScreenButton" text="Close" />
+              <Button mnemonicParsing="false" onAction="#handleButtonAction" text="Test">
+                  <VBox.margin>
+                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+              </Button>
+         </children>
+      </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <stylesheets>
+        <URL value="@../files/css/common.css" />
+        <URL value="@../files/css/fextile.css" />
+        <URL value="@../files/css/validation.css" />
+    </stylesheets>
+</VBox>
